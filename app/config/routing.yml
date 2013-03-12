@@ -1,0 +1,15 @@
+dkacban1_example_menu:
+    resource: "@dkacban1ExampleMenuBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+szkolenie_miasta:
+    resource: "@SzkolenieMiastaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+colors:
+    resource: "@ColorsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

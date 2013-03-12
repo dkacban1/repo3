@@ -1,0 +1,24 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Menu list</h1>
+
+    <table class="records_list">
+        <tbody>
+        {% for entity in entities %}
+            <ul>
+                <li>
+                    <a href="{{ path('menu_edit', { 'id': entity.id }) }}">{{entity.title}}</a>
+                </li>
+            </ul>
+        {% endfor %}
+        </tbody>
+    </table>
+        <ul>
+        <li>
+            <a href="{{ path('menu_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}
